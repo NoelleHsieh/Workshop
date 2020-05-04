@@ -1,4 +1,4 @@
-package ch14
+package ch15
 
 fun main() {
     val player = Player("Madrigal")
@@ -10,6 +10,8 @@ fun main() {
 
     // 플레이어의 상태 출력
     printPlayerStatus(player)
+
+    Game.play()
 
     performCombat()
     performCombat("Ulrich")
@@ -24,6 +26,17 @@ private fun printPlayerStatus(player: Player) {
     println("${player.name} ${player.formatHealthStatus()}")
 }
 
+object Game {
+    init {
+        println("Welcome, adventurer")
+    }
+
+    fun play(){
+        while(true){
+
+        }
+    }
+}
 
 
 fun performCombat() {

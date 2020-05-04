@@ -1,4 +1,4 @@
-package ch14
+package ch15
 
 open class Room(val name: String) {
     protected open val dangerLevel = 5
